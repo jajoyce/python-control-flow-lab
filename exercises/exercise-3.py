@@ -10,3 +10,11 @@
 #      The dog's age in dog years is xx
 
 # Hint:  Use the int() function to convert the string returned from input() into an integer
+
+years = int(input("Input a dog's age in human years: "))
+
+if years <= 2:
+    dog_years = years * 10 
+else: 
+    dog_years = 20 + (years - 2) * 7 
+print(f"The dog's age in dog years is {dog_years}.")
