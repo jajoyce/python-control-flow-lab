@@ -12,3 +12,17 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+
+def print_fibonacci(max):
+    first = 0
+    second = 1
+    for term in range(max):
+        if term < 2:
+            print(f'term: {term} / number: {term}')
+        else: 
+            num = first + second
+            print(f'term: {term} / number: {num}')
+            first = second
+            second = num
+
+print_fibonacci(50)
